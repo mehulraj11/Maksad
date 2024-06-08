@@ -1,0 +1,16 @@
+{
+  "name": "maksad",
+  "version": "1.0.0",
+  "description": "This project is aim to bring the effect of 3R(Reuse,Reduce,Recycle) in action .\r It is a web app where user have option to choose the waste products he have and our web app will process it and return the user in what way he can best utilise it.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.4.1"
+  }
+}
