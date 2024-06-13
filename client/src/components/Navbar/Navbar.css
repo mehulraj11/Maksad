@@ -1,0 +1,101 @@
+.navbar {
+  padding: 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ebf4eb;
+  border-radius: 20px;
+}
+
+.navbar .logo-design {
+  width: 120px;
+  border-radius: 50%;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 23px;
+  color: #198d19;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 25px; /* Adjusted for better alignment */
+}
+
+.navbar .signin-button {
+  background-color: #02330f;
+  font-size: 18px;
+  font-weight: 300;
+  color: #dbf2e1;
+  border: 1px solid #bbdf02;
+  padding: 10px 20px; /* Adjusted padding for better alignment */
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+}
+
+.navbar .signin-button:hover {
+  background-color: #caf107;
+  color: rgb(9, 95, 4);
+  font-weight: bold;
+  border: 1px solid #034e17;
+}
+
+.navbar .active {
+  padding-bottom: 2px;
+  border-bottom: 2px solid #034e17;
+}
+
+.navbar li {
+  cursor: pointer;
+}
+
+.navbar li:hover {
+  color: #06b406;
+  font-size: 22px;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  margin-right: 20px; /* Added margin for spacing */
+}
+
+.search-input {
+  padding: 10px 30px; /* Adjusted padding for better alignment */
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  outline: none;
+  background-color: #014614;
+  color: white;
+}
+
+.search-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-basket {
+  position: relativ;
+  display: flex;
+  align-items: center;
+}
+
+.dot {
+  position: absolute;
+  min-width: 10px;
+  min-height: 10px;
+  background-color: #06b406;
+  border-radius: 50%;
+  top: 48px;
+  right: 123px;
+}
