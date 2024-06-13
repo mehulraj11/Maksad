@@ -1,6 +1,7 @@
 import './login.css'
-// import imagePath from '../images/chris-lee-70l1tDAI6rM-unsplash 1.jpg';import { useState } from 'react';
-export default function Login(){
+// import imagePath from '../images/chris-lee-70l1tDAI6rM-unsplash 1.jpg';
+import { useState } from 'react';
+export default function Login({singUpRoute, setSignUpRoute}){
     const [handleInput, setHandleInput] = useState({
         loginEmail :"",
         loginPassword: ""
@@ -20,6 +21,10 @@ export default function Login(){
             loginPassword: "" 
         })
         
+    }
+
+    function handleSingUpRoute(){
+        setSignUpRoute(prevSate => !prevSate);
     }
     return(
         <div className='login' id='login'>
@@ -67,7 +72,7 @@ export default function Login(){
                     <button>Sign in with Google</button>
                 </div> */}
                 <div className='leftFooter'>
-                    <p>Don't have an account? <a href="#singUp">Sing up</a></p>
+                    <p>Don't have an account? <a href="#singUp" onClick={handleSingUpRoute}>Sing up</a></p>
                 </div>
             </div>
         </div>

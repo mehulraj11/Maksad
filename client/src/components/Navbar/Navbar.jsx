@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import './Navbar.css';
 import { assets } from "../assets/frontend_assets/assets";
-
-const Navbar = () => {
+const Navbar = ({signInRoute, setSignInRoute}) => {
   const [menu, setMenu] = useState("mobile-app");
   const [searchQuery, setSearchQuery] = useState("");
-
+  function handleSignInNavbar(){
+    setSignInRoute(prevState => !signInRoute)
+    console.log(signInRoute)
+  }
   const handleSearch = (event) => {
     event.preventDefault();
     // Implement search functionality here
@@ -38,7 +40,7 @@ const Navbar = () => {
           <img src={assets.basket_icon} alt="Basket" />
           <div className="dot"></div>
         </div>
-        <button className="signin-button">Sign in</button>
+        <button className="signin-button" onClick={handleSignInNavbar}>Sign in</button>
       </div>
     </div>
   );

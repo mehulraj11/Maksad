@@ -1,4 +1,6 @@
 .navbar {
+  /* colors are not changing neither background nor color */
+  /* background-color:rgb(9, 50, 1); */
   padding: 10px 10px;
   display: flex;
   justify-content: space-between;

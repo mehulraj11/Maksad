@@ -1,5 +1,5 @@
 import './sign_up.css';
-import imagePath from '../images/chris-lee-70l1tDAI6rM-unsplash 1.jpg';
+// import imagePath from '../images/chris-lee-70l1tDAI6rM-unsplash 1.jpg';
 import { useState } from 'react';
 
 export default function SignUp() {
@@ -80,9 +80,9 @@ export default function SignUp() {
                     </div>
                 </div>
             </div>
-            <div className='right'>
+            {/* <div className='right'>
                 <img src={imagePath} alt="Chris Lee Unsplash" />
-            </div>
+            </div> */}
         </div>
     );
 }
