@@ -2,16 +2,19 @@ import React, { useState } from "react";
 import './Navbar.css';
 import { assets } from "../assets/frontend_assets/assets";
 const Navbar = ({signInRoute, setSignInRoute}) => {
-  const [menu, setMenu] = useState("mobile-app");
+  const [menu, setMenu] = useState("");
   const [searchQuery, setSearchQuery] = useState("");
+  /*  CONDITIONAL RENDERING OF LOGIN COMPONENT BY PASSING STATE AS PROP :-mehul */
   function handleSignInNavbar(){
-    setSignInRoute(prevState => !signInRoute)
+    setSignInRoute(prevState => !prevState)
     console.log(signInRoute)
   }
   const handleSearch = (event) => {
     event.preventDefault();
     // Implement search functionality here
     console.log("Searching for:", searchQuery);
+
+    setSearchQuery("")
   };
 
   return (
@@ -40,7 +43,7 @@ const Navbar = ({signInRoute, setSignInRoute}) => {
           <img src={assets.basket_icon} alt="Basket" />
           <div className="dot"></div>
         </div>
-        <button className="signin-button" onClick={handleSignInNavbar}>Sign in</button>
+        <button className="signin-button" onClick={handleSignInNavbar}>Sign In</button>
       </div>
     </div>
   );

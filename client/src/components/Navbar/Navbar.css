@@ -1,26 +1,32 @@
 .navbar {
   /* colors are not changing neither background nor color */
   /* background-color:rgb(9, 50, 1); */
-  padding: 10px 10px;
+  /* border: 1px solid rebeccapurple; */
+  padding: 0.3rem 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #ebf4eb;
-  border-radius: 20px;
+  /* border-radius: 20px; */
 }
 
 .navbar .logo-design {
-  width: 120px;
+  width: 80px;
   border-radius: 50%;
 }
 
 .navbar-menu {
+  /* border: 1px solid black; */
+  width: 50%;
+  height: 10vh;
   display: flex;
   list-style: none;
-  gap: 23px;
+  /* gap: 23px; */
   color: #198d19;
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: bold;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbar-right {
@@ -31,21 +37,21 @@
 
 .navbar .signin-button {
   background-color: #02330f;
-  font-size: 18px;
-  font-weight: 300;
+  font-size: 1rem;
+  font-weight: 500;
   color: #dbf2e1;
-  border: 1px solid #bbdf02;
-  padding: 10px 20px; /* Adjusted padding for better alignment */
-  border-radius: 50px;
+  border: none;
+  padding: 0.5rem 1rem; /* Adjusted padding for better alignment */
+  border-radius: 20px;
   cursor: pointer;
-  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+  transition: transform 0.9s, background-color 0.5s, box-shadow 0.6s;
 }
 
 .navbar .signin-button:hover {
   background-color: #caf107;
   color: rgb(9, 95, 4);
-  font-weight: bold;
-  border: 1px solid #034e17;
+  /* font-weight: bold; */
+  /* border: 1px solid #034e17; */
 }
 
 .navbar .active {
@@ -55,11 +61,12 @@
 
 .navbar li {
   cursor: pointer;
+  /* border: 1px solid red; */
 }
 
 .navbar li:hover {
   color: #06b406;
-  font-size: 22px;
+  font-size: 1.2rem;
 }
 
 .search-form {
@@ -69,9 +76,9 @@
 }
 
 .search-input {
-  padding: 10px 30px; /* Adjusted padding for better alignment */
+  padding: 0.5rem 1.5rem; /* Adjusted padding for better alignment */
   border: 1px solid #ccc;
-  border-radius: 15px;
+  border-radius: 8px;
   outline: none;
   background-color: #014614;
   color: white;
@@ -81,7 +88,7 @@
   background: none;
   border: none;
   cursor: pointer;
-  margin-left: 5px;
+  margin-left: 0.5rem;
   display: flex;
   align-items: center;
 }
@@ -98,6 +105,6 @@
   min-height: 10px;
   background-color: #06b406;
   border-radius: 50%;
-  top: 48px;
-  right: 123px;
+  /* top: 48px; */
+  /* right: 123px; */
 }
